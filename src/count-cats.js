@@ -1,6 +1,7 @@
 const CustomError = require("../extensions/custom-error");
 
 module.exports = function countCats(matrix) {
-  return matrix.map((subMatrix) => subMatrix.filter((item) => item === '^^')).flat().length;
+  let resultArr = matrix.map((curMatrix) => curMatrix.filter((item) => item === '^^'));
+  return resultArr.flat().length;
   
 };
